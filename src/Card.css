@@ -1,0 +1,62 @@
+#cartao{
+    margin: 1rem;
+    color: white;
+    background-color: #0892a5;
+    padding-top: 1rem;
+    align-self: center;
+    text-align: center;
+    width: 30vw;
+    height: 60vh;
+    border-radius: 0.4rem;
+    box-shadow: 0.1rem 0.1rem 0.1rem black;
+    float: left;
+}
+
+#subject{
+    background-color: white;
+    font-size: 1.3rem;
+    font-weight: bold;
+    border-radius: 0.5rem;
+    color: black;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20vw;
+    min-height: 5vh;
+}
+
+#text{
+    white-space: pre;
+    text-align: justify;
+    padding-left: 0.4rem;
+    padding-right: 0.4rem;
+    margin-top: 5vh;
+    background-color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 0.5rem;
+    color: black;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20vw;
+    min-height: 40vh;
+}
+
+#apagar{
+    margin-top: 3vh;
+    position:relative;
+}
+
+#btn_apagar{
+    cursor: pointer;
+    padding-left:2vw;
+    padding-right: 2vw;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    border-radius: 0.4rem;
+    color: white;
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-decoration: none;
+    background-color: red;
+    
+}

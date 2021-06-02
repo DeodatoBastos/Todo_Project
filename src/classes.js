@@ -1,5 +1,5 @@
 export class Data{
-    constructor(subject,text,plant_date,image){
+    constructor(subject,text){
         this.subject=subject
         this.text=text
     }
@@ -8,6 +8,7 @@ export class Data{
 
 export class DB{
     constructor(){
+
         if (localStorage.getItem('id')===null)
             localStorage.setItem('id', '0')
     }
@@ -22,7 +23,7 @@ export class DB{
     gravar(data){
         if (this.validarDados(data)){
             let id=this.getId()
-            console.log(id)
+
             localStorage.setItem(id,JSON.stringify(data))
         }
 
@@ -36,8 +37,7 @@ export class DB{
             return false
         for (let i=1; i<=id; i++){
             let data_i=JSON.parse(localStorage.getItem(i.toString()))
-            console.log('i= ', i)
-            console.log('data_i= ', data_i)
+
             if (data_i.subject===data.subject && data_i.text===data.text){
                 return false
             }
@@ -45,4 +45,17 @@ export class DB{
         }
         return true
     }
+    
+    resgatarDados(){
+        let id =eval (localStorage.getItem('id'))
+        let dados=[]
+        for (let i=1; i<=id; i++){
+            dados.push(JSON.parse(localStorage.getItem(i.toString())))
+        }
+        return dados
+    }
+
+
+    
+
 }
